@@ -54,6 +54,8 @@ export default class News extends Component {
     this.setState({ page: this.state.page - 1 });
   };
 
+ 
+
   render() {
     return (
       <>
@@ -95,7 +97,7 @@ export default class News extends Component {
           <button
             type="button"
             disabled={
-              this.state.page + 1 > Math.ceil(this.state.totalResults / 20)
+              this.state.page + 1 > Math.ceil(this.state.totalResults/this.props.pageSize)
             }
             onClick={this.handleNextClick}
             className="btn btn-warning"
