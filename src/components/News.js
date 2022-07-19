@@ -54,12 +54,13 @@ export default class News extends Component {
   };
 
   fetchDataforScroller = async () => {
-    this.setState({ page: this.state.page + 1 });
+   
     let url = `https://newsapi.org/v2/top-headlines?country=${
       this.props.country
     }&category=${this.props.category}&apiKey=${this.props.apiKey}&page=${
       this.state.page + 1
     }&pageSize=${this.props.pageSize}`;
+    this.setState({ page: this.state.page + 1 });
     let data = await fetch(url);
     let jsonData = await data.json();
     this.setState({
@@ -97,7 +98,8 @@ export default class News extends Component {
     return (
       <>
         <>
-          <h1 className="text-center my-3" style={headings}>
+          <div style={{marginTop: "80px"}}>
+          <h1 className="text-center" style={headings}>
             Khabri - Top Headlines
           </h1>
           <center>
@@ -114,6 +116,7 @@ export default class News extends Component {
               </span>
             </h1>
           </center>
+          </div>
           {this.state.loading && (
             <>
               <PcardLoader />
