@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import PlaceholderCard from "./PlaceholderCard";
 
-export default class PcardLoader extends Component {
-  render() {
+export default function PcardLoader(){
+
     return (
       <>
         <div className="container my-3">
@@ -20,5 +20,5 @@ export default class PcardLoader extends Component {
         </div>
       </>
     );
-  }
+  
 }
