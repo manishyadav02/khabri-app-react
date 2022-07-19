@@ -1,15 +1,14 @@
 import "./App.css";
 
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import News from "./components/News";
 import { Routes, Route } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 
 export default function App() {
-  
   // eslint-disable-next-line
-  const [country, setCountry ] = useState("us") ; 
+  const [country, setCountry] = useState("us");
   const [progress, setProgress] = useState(0);
 
   const pageSize = 18;
@@ -77,6 +76,52 @@ export default function App() {
             />
           }
         />
+
+        <Route
+          exact
+          path="/ae"
+          element={
+            <News
+              apiKey={apiKey}
+              setProgress={setProgress}
+              key="ae"
+              pageSize={pageSize}
+              country="ae"
+              category="general"
+            />
+          }
+        />
+
+<Route
+          exact
+          path="/id"
+          element={
+            <News
+              apiKey={apiKey}
+              setProgress={setProgress}
+              key="id"
+              pageSize={pageSize}
+              country="id"
+              category="general"
+            />
+          }
+        />
+
+<Route
+          exact
+          path="/au"
+          element={
+            <News
+              apiKey={apiKey}
+              setProgress={setProgress}
+              key="au"
+              pageSize={pageSize}
+              country="au"
+              category="general"
+            />
+          }
+        />
+
         <Route
           exact
           path="/business"

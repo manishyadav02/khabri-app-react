@@ -27,29 +27,22 @@ export default function Navbar() {
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/">
-                  About
-                </Link>
-              </li>
 
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/uk">
-                  GB
-                </Link>
-              </li>
+          <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Countries
+          </a>
+          <ul class="dropdown-menu bg-dark">
+            <li><Link class="dropdown-item" to="/uk">United Kingdom</Link></li>
+            <li><Link class="dropdown-item" to="/us">United States</Link></li>
+            <li><Link class="dropdown-item" to="/in">India</Link></li>
+            <li><Link class="dropdown-item" to="/ae">United Arab Emirates</Link></li>
+            <li><Link class="dropdown-item" to="/id">Indonesia</Link></li>
+            <li><Link class="dropdown-item" to="/au">Australia</Link></li>
 
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/us">
-                  US
-                </Link>
-              </li>
 
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/in">
-                  IND
-                </Link>
-              </li>
+          </ul>
+        </li>
 
               <li className="nav-item">
                 <Link
