@@ -8,6 +8,7 @@ export default class NewsItem extends Component {
       <div className="my-3">
         <div className="card">
           <img
+          
             src={
               imageUrl
                 ? imageUrl
@@ -15,6 +16,9 @@ export default class NewsItem extends Component {
             }
             className="card-img-top"
             alt="..."
+            onError={(e) => {
+              e.currentTarget.src = "https://img.freepik.com/free-vector/top-headlines-news-themem-background_1017-14199.jpg?w=2000";
+            }}
           />
           <div className="card-body">
           <h5><span className="badge bg-secondary">{source}</span></h5>

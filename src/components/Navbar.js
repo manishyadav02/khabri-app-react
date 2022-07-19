@@ -43,7 +43,7 @@ export default class Navbar extends Component {
                     aria-current="page"
                     to="/uk"
                   >
-                    UK
+                    GB
                   </Link>
                 </li>
 
