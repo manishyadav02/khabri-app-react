@@ -15,9 +15,10 @@ export default function App() {
 
   const apiKey = "264dcad17acb4ba882c12e4c5940d37b";
 
+
   return (
     <div>
-      <Navbar />
+      <Navbar/>
       <LoadingBar height={3} color="#0d6efd" progress={progress} />
       <Routes>
         <Route

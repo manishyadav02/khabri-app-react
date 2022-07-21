@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
+export default function Navbar(props) {
   return (
     <div>
       <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
@@ -28,21 +28,50 @@ export default function Navbar() {
                 </Link>
               </li>
 
-          <li class="nav-item dropdown">
-          <a class="nav-link active dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Countries
-          </a>
-          <ul class="dropdown-menu bg-dark">
-            <li><Link class="dropdown-item" to="/uk">United Kingdom</Link></li>
-            <li><Link class="dropdown-item" to="/us">United States</Link></li>
-            <li><Link class="dropdown-item" to="/in">India</Link></li>
-            <li><Link class="dropdown-item" to="/ae">United Arab Emirates</Link></li>
-            <li><Link class="dropdown-item" to="/id">Indonesia</Link></li>
-            <li><Link class="dropdown-item" to="/au">Australia</Link></li>
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link active dropdown-toggle"
+                  href="/"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Countries
+                </a>
 
-
-          </ul>
-        </li>
+                <ul className="dropdown-menu">
+                  <li>
+                    <Link className="dropdown-item" to="/uk">
+                      United Kingdom
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/us">
+                      United States
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/in">
+                      India
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/ae">
+                      United Arab Emirates
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/id">
+                      Indonesia
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/au">
+                      Australia
+                    </Link>
+                  </li>
+                </ul>
+              </li>
 
               <li className="nav-item">
                 <Link
