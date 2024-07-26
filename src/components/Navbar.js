@@ -27,14 +27,25 @@ export default function Navbar(props) {
                   <img
                     src="https://img.icons8.com/?size=48&id=QPmx9q7CoTrC&format=png"
                     alt=""
-                    width="18"
-                    height="18"
+                    width="20"
+                    height="20"
                   />
                   Home
                 </Link>
               </li>
+              <li className="nav-item mx-5">
+                <Link className="nav-link  " aria-current="page" to="/About">
+                  <img
+                    src="https://img.icons8.com/?size=64&id=42773&format=png"
+                    alt=""
+                    width="20"
+                    height="20"
+                  />
+                  About
+                </Link>
+              </li>
 
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown mx-5">
                 <a
                   className="nav-link   dropdown-toggle"
                   href="/"
@@ -121,7 +132,7 @@ export default function Navbar(props) {
                 </ul>
               </li>
 
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown mx-5">
                 <a
                   className="nav-link   dropdown-toggle"
                   href="/"
@@ -130,7 +141,7 @@ export default function Navbar(props) {
                   aria-expanded="false"
                 >
                   <img
-                    src="https://img.icons8.com/?size=24&id=88184&format=png"
+                    src="https://img.icons8.com/?size=48&id=o5KsPhFI1L5R&format=png"
                     alt=""
                     width="20"
                     height="20"
@@ -217,7 +228,20 @@ export default function Navbar(props) {
                     </Link>
                   </li>
                 </ul>
+               
               </li>
+              
+              <li className="nav-item">
+                <Link className="nav-link  " aria-current="page" to="/Video">
+                  <img
+                    src="https://img.icons8.com/?size=64&id=TMIV5nMneLUt&format=png"
+                    alt=""
+                    width="22"
+                    height="22"
+                  />
+                  Video
+                </Link>
+                </li>
             </ul>
             <form className="d-flex" role="search">
               <input

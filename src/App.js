@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar";
 import News from "./components/News";
 import { Routes, Route } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
+import About from "./components/About";
+import Vedio from "./components/Vedio";
 
 export default function App() {
   // eslint-disable-next-line
@@ -21,7 +23,22 @@ export default function App() {
       <Navbar/>
       <LoadingBar height={3} color="red" progress={progress} />
       <Routes>
+      <Route
+          exact
+          path="/About"
+          element={
+           <About/>
+          }
+        />
         <Route
+          exact
+          path="/Video"
+          element={
+           <Vedio/>
+          }
+        />
+        <Route
+
           exact
           path="/"
           element={
