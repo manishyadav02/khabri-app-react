@@ -19,7 +19,7 @@ export default function App() {
   return (
     <div>
       <Navbar/>
-      <LoadingBar height={3} color="#0d6efd" progress={progress} />
+      <LoadingBar height={3} color="red" progress={progress} />
       <Routes>
         <Route
           exact

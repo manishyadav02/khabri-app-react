@@ -67,7 +67,7 @@ export default function News(props) {
       <>
         <div style={{ marginTop: "80px" }}>
           <h1 className="text-center" style={headings}>
-            Khabri - Top Headlines
+            News-React - Top Headlines
           </h1>
           <center>
             <h1>

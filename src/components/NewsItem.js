@@ -6,7 +6,14 @@ export default function NewsItem (props){
       props;
     return (
       <div className="my-3">
-        <div className="card">
+        <div className="card" style={{margin:"20px"}}>
+        <div style={{display:'flex',
+            justifyContent:'flex-end',
+            position:'absolute',
+            right:'0',
+          }}>
+        <span className="badge rounded-pill bg-primary">{source}</span>
+        </div>
           <img
           
             src={
@@ -21,7 +28,6 @@ export default function NewsItem (props){
             }}
           />
           <div className="card-body">
-          <h5><span className="badge bg-secondary">{source}</span></h5>
             <h5 className="card-title">{title}</h5>
             <p className="card-text">{description}</p>
             <p className="card-text">
