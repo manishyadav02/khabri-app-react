@@ -33,7 +33,7 @@ export default function News(props) {
     setLoading(false);
     props.setProgress(100);
   };
-
+console.log(articles);
   const fetchDataforScroller = async () => {
     let url = `https://newsapi.org/v2/top-headlines?country=${
       props.country
@@ -94,7 +94,7 @@ export default function News(props) {
         <InfiniteScroll
           dataLength={articles.length} //This is important field to render the next data
           next={fetchDataforScroller}
-          hasMore={articles.length !== totalResults}
+          hasMore={articles.length< totalResults}
           loader={
             <>
               <PcardLoader />

@@ -23,118 +23,200 @@ export default function Navbar(props) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
+                <Link className="nav-link  " aria-current="page" to="/">
+                  <img
+                    src="https://img.icons8.com/?size=48&id=QPmx9q7CoTrC&format=png"
+                    alt=""
+                    width="18"
+                    height="18"
+                  />
                   Home
                 </Link>
               </li>
 
               <li className="nav-item dropdown">
                 <a
-                  className="nav-link active dropdown-toggle"
+                  className="nav-link   dropdown-toggle"
                   href="/"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
+                  <img
+                    src="https://image.shutterstock.com/image-vector/vector-globe-icon-world-260nw-445135627.jpg"
+                    alt=""
+                    width="20"
+                    height="20"
+                  />
                   Countries
                 </a>
 
                 <ul className="dropdown-menu">
                   <li>
                     <Link className="dropdown-item" to="/uk">
+                      <img
+                        src="https://img.icons8.com/?size=64&id=NZmBIL-yknpE&format=png"
+                        alt=""
+                        width="20"
+                        height="20"
+                      />
                       United Kingdom
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/us">
+                      <img
+                        src="https://img.icons8.com/?size=48&id=15532&format=png"
+                        alt=""
+                        width="20"
+                        height="20"
+                      />
                       United States
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/in">
+                      <img
+                        src="https://img.icons8.com/?size=48&id=HgrhrvtEzvc1&format=png"
+                        alt=""
+                        width="20"
+                        height="20"
+                      />
                       India
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/ae">
+                      <img
+                        src="https://img.icons8.com/?size=48&id=60211&format=png"
+                        alt=""
+                        width="20"
+                        height="20"
+                      />
                       United Arab Emirates
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/id">
+                      <img
+                        src="https://img.icons8.com/?size=48&id=GSBGRV7sPkxg&format=png"
+                        alt=""
+                        width="20"
+                        height="20"
+                      />
                       Indonesia
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/au">
+                      <img
+                        src="https://img.icons8.com/?size=48&id=UN34m1KGQG9v&format=png"
+                        alt=""
+                        width="20"
+                        height="20"
+                      />
                       Australia
                     </Link>
                   </li>
                 </ul>
               </li>
 
-              <li className="nav-item">
-                <Link
-                  className="nav-link active"
-                  aria-current="page"
-                  to="/business"
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link   dropdown-toggle"
+                  href="/"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
-                  Business
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link active"
-                  aria-current="page"
-                  to="/entertainment"
-                >
-                  Entertainment
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link active"
-                  aria-current="page"
-                  to="/general"
-                >
-                  General
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link active"
-                  aria-current="page"
-                  to="/health"
-                >
-                  Health
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link active"
-                  aria-current="page"
-                  to="/science"
-                >
-                  Science
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link active"
-                  aria-current="page"
-                  to="/sports"
-                >
-                  Sports
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link active"
-                  aria-current="page"
-                  to="/technology"
-                >
-                  Technology
-                </Link>
+                  <img
+                    src="https://img.icons8.com/?size=24&id=88184&format=png"
+                    alt=""
+                    width="20"
+                    height="20"
+                  />
+                  category
+                </a>
+
+                <ul className="dropdown-menu">
+                  <li>
+                    <Link className="dropdown-item" to="/uk">
+                      <img
+                        src="https://img.icons8.com/?size=80&id=CazxudJH3N8i&format=png"
+                        alt=""
+                        width="20"
+                        height="20"
+                      />
+                      Business
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/us">
+                      <img
+                        src="https://image.shutterstock.com/image-vector/3d-icon-popcorn-vector-render-260nw-2137266911.jpg"
+                        alt=""
+                        width="20"
+                        height="20"
+                      />
+                      Entertainment
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/in">
+                      <img
+                        src="https://img.icons8.com/?size=80&id=0IfLdWR1SxI3&format=png"
+                        alt=""
+                        width="20"
+                        height="20"
+                      />
+                      General
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/ae">
+                      <img
+                        src="https://img.icons8.com/?size=64&id=46599&format=png"
+                        alt=""
+                        width="20"
+                        height="20"
+                      />
+                      Health
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/id">
+                      <img
+                        src="https://img.icons8.com/isometric/80/binoculars.png"
+                        alt=""
+                        width="20"
+                        height="20"
+                      />
+                      Science
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/au">
+                      <img
+                        src="https://img.icons8.com/?size=48&id=AlkSAD2AzTQJ&format=png"
+                        alt=""
+                        width="20"
+                        height="20"
+                      />
+                      Sports
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/au">
+                      <img
+                        src="https://img.icons8.com/?size=60&id=gShesypkbo1o&format=png"
+                        alt=""
+                        width="20"
+                        height="20"
+                      />
+                      Technology
+                    </Link>
+                  </li>
+                </ul>
               </li>
             </ul>
             <form className="d-flex" role="search">
@@ -151,6 +233,6 @@ export default function Navbar(props) {
           </div>
         </div>
       </nav>
-    </div>
-  );
+    </div>
+  );
 }

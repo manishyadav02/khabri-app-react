@@ -13,7 +13,7 @@ export default function App() {
 
   const pageSize = 18;
 
-  const apiKey = "264dcad17acb4ba882c12e4c5940d37b";
+  const apiKey = "ccec027597fe4ab7b91bc375de1ffa08";
 
 
   return (
